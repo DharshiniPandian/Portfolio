@@ -659,7 +659,7 @@ button:hover {
   margin-top: 17px; 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .skills .side1,.skills .side2 {
     -webkit-box-flex: 1;
         -ms-flex: 1 100%;
@@ -832,7 +832,7 @@ a {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .projects .max-width {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
