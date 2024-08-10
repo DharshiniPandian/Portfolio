@@ -173,11 +173,11 @@ body{
   }
 
   .navbar #menu-open{
-    margin-left: 250px;
+     margin-left: auto;
   }
 
   .navbar .logo{
-    margin-left: -50px;
+    margin-left: 0;
   }
 
   .navbar .menu {
