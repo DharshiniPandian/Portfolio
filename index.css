@@ -4,6 +4,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-decoration: none;
+  font-family: Nunito Sans ;
 }
 
 html {
@@ -11,7 +12,7 @@ html {
 }
 
 body{
-  background: url("/b2.jpg") no-repeat center center/cover;
+  background: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c9a17937-8c0d-4a78-b75b-d9847af5b606/dg7ssyw-c79f2b26-1b69-4633-8cd6-4256bcca93eb.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2M5YTE3OTM3LThjMGQtNGE3OC1iNzViLWQ5ODQ3YWY1YjYwNlwvZGc3c3N5dy1jNzlmMmIyNi0xYjY5LTQ2MzMtOGNkNi00MjU2YmNjYTkzZWIuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.EO5d-A_h03cUY0q0fAsM8qlGBnPxiT2hybyl1VHA1ws") no-repeat center center/cover;
 }
 
 ::-webkit-scrollbar {
@@ -44,7 +45,7 @@ body{
           box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(1.0px);
   -webkit-backdrop-filter: blur(1.0px);
-  z-index: 2;
+  z-index: 1000;
   padding: 15px 0;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -239,8 +240,8 @@ body{
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100vh;
   color: #fff;
+  height: 100vh;
   font-family: "Ubuntu", sans-serif;
 }
 
@@ -305,6 +306,7 @@ body{
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+ 
 }
 
 .myimg img {
@@ -332,10 +334,12 @@ body{
 }
 
 .home-content .text3 {
-  font-size: 18px;
   text-align: justify;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 21px;
+  letter-spacing: 1px;
+  font-weight: 400;
 }
 
 .home-content .icons {
@@ -370,6 +374,7 @@ a button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transform: skewX(-20deg);
   -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
@@ -406,6 +411,10 @@ button:hover {
     margin-bottom: 10px;
   }
 
+  .home, .about, .skills{
+    height: 100%;
+  }
+
   .home .max-width{
     margin-top: 76px;
   }
@@ -439,10 +448,6 @@ button:hover {
 
   .home-content .text2 {
     font-size: 36px;
-  }
-
-  .home-content .text3 {
-    font-size: 18px;
   }
 
   .myimg img {
@@ -537,15 +542,17 @@ button:hover {
   color: white;
 }
 
-.about .myimg1 img{
-  height: 390px;
-  width: 350px;
-  border-radius: 10px;
+.about-content > h3{
+  font-size: 30px;
+  text-align: center;
 }
 
 .about-content {
-  font-size: 18px; 
-  line-height: 1.6; 
+  font-size: 22px; 
+  font-weight: 200;
+  line-height: 1.4; 
+  letter-spacing: 1px;
+  text-align: justify;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -554,13 +561,6 @@ button:hover {
   margin-bottom: 20px; 
 }
 
-.about-content p:first-of-type {
-  font-weight: 500; 
-}
-
-.about-content p:last-of-type {
-  font-style: italic; 
-}
 
 .skills {
   height: 70vh;
@@ -584,7 +584,7 @@ button:hover {
 
 .skills .side1, .skills .side2 {
   border-radius: 8px;
-  background: #333; 
+  background: #33333391; 
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; 
           box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   padding: 20px;
@@ -594,10 +594,11 @@ button:hover {
       -ms-flex: 1;
           flex: 1;
   min-width: 250px;
+  /* background: transparent; */
 }
 
-.skills h2 {
-  font-size: 26px; 
+.skill h2 {
+  font-size: 30px; 
   font-weight: 700; 
   color: #f1f1f1;
   margin-bottom: 15px;
@@ -606,33 +607,40 @@ button:hover {
   position: relative;
 }
 
-.skills ul {
-  list-style: none;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
+.skill ul {
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
   gap: 20px; 
+  padding: 0;
 }
 
-.skills ul li {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 calc(33.333% - 40px);
-          flex: 1 1 calc(33.333% - 40px); 
-  display: -webkit-box; 
-  display: -ms-flexbox; 
+.skill ul li {
+  flex: 1 1 calc(33.333% - 40px); 
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
+  margin: 10px 0;
 }
 
-.skills ul li img {
+@media (min-width: 1200px) {
+  .skill ul li {
+    flex: 1 1 calc(20% - 40px);
+  }
+}
+
+@media (max-width: 768px) {
+  .skill ul li {
+    flex: 1 1 calc(50% - 40px);
+  }
+}
+
+@media (max-width: 480px) {
+  .skill ul li {
+    flex: 1 1 calc(100% - 40px);
+  }
+}
+
+
+.skill ul li img {
   width: 100px; 
   height: 100px;
   border-radius: 8px; 
@@ -697,7 +705,7 @@ button:hover {
 
 .pro {
   border-radius: 8px;
-  background: #333;
+  background: #33333391;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   padding: 15px; 
@@ -732,7 +740,7 @@ button:hover {
 }
 
 .projects h2{
-  font-size: 26px; 
+  font-size: 30px; 
   font-weight: 700; 
   color: #f1f1f1;
   margin-bottom: 15px;
