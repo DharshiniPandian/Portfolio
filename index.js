@@ -1,3 +1,20 @@
+let currentIndex = 0;
+
+function moveCarousel(direction) {
+  const carouselTrack = document.querySelector(".carousel-track");
+  const projects = document.querySelectorAll(".pro");
+  const projectWidth = projects[0].getBoundingClientRect().width;
+
+  if (direction === "right" && currentIndex < projects.length - 2) {
+    currentIndex++;
+  } else if (direction === "left" && currentIndex > 0) {
+    currentIndex--;
+  }
+
+  const newTransform = -projectWidth * currentIndex;
+  carouselTrack.style.transform = `translateX(${newTransform}px)`;
+}
+
 document.getElementById('menu-open').onclick = function() {
     document.getElementById('menu').classList.add('active');
     document.getElementById('menu-open').style.display = 'none';
@@ -50,3 +67,4 @@ document.getElementById('menu-open').onclick = function() {
     );
   });
   
+

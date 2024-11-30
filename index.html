@@ -71,16 +71,21 @@
       <div class="side1">
         <div class="language">
           <ul>
-            <li><img src="./C.png" alt="C"></li>
-            <li><img src="./C++.png" alt="C++"></li>
-            <li><img src="./HTML.png" alt="HTML"></li>
-            <li><img src="./CSS.png" alt="CSS"></li>
-            <li><img src="./JS.jpeg" alt="JavaScript"></li>
-            <li><img src="./SQL.png" alt="SQL"></li>
-            <li><img src="./React.png" alt="React JS"></li>
-            <li><img src="./node.png" alt="Node JS"></li>
-            <li><img src="./express.png" alt="Express JS"></li>
-            <li><img src="./workbench.jpg" alt="MySQL WorkBench"></li>
+            <li><img src="./assets/CSS.png" alt="C"></li>
+            <li><img src="./assets/C++.png" alt="C++"></li>
+            <li><img src="./assets/HTML.png" alt="HTML"></li>
+            <li><img src="./assets/CSS.png" alt="CSS"></li>
+            <li><img src="./assets/JS.jpeg" alt="JavaScript"></li>
+            <li><img src="./assets/SQL.png" alt="SQL"></li>
+            <li><img src="./assets/React.png" alt="React JS"></li>
+            <li><img src="./assets/node.png" alt="Node JS"></li>
+            <li><img src="./assets/express.png" alt="Express JS"></li>
+            <li><img src="./assets/workbench.jpg" alt="MySQL WorkBench"></li>
+            <li><img src="./assets/git.png" alt="Git"></li>
+            <li><img src="./assets/github1.png" alt="Github"></li>
+            <li><img src="./assets/sequelize.png" alt="Sequelize"></li>
+            <li><img src="./assets/postgres.png" alt="PostgreSQL"></li>
+            <li><img src="./assets/powerbi.png" alt="PowerBI"></li>
           </ul>
         </div>
       </div>
@@ -90,69 +95,140 @@
 
   <section class="projects" id="projects">
     <h2>Projects</h2><br>
-    <div class="max-width">
-      <div class="pro">
-        <div class="box">
-          <h2>React ace editor</h2><br>
-          <img src="./editor.png" alt="img"><br>
-          <div class="des">
-            <h4>Description:</h4>
-            <p>The React-based editor website allows users to create and manage multiple HTML, CSS, and JavaScript files within a unified interface. It features real-time compilation and preview capabilities, enabling users to see immediate results and efficiently develop and test their code.</p>
-          </div><br>
-          <div class="des">
-            <h4>Tech Stack:</h4>
-            <p>React JS,HTML,CSS,JavaScript</p>
-          </div><br>
-          <div class="des">
-            <h4>Role:</h4>
-            <p>Frontend Developer</p>
-          </div><br>
-          <a href="https://github.com/DharshiniPandian/React_ace_editor"><button>Git Repo</button></a><br>
+    <div class="carousel-container">
+      <button class="arrow left-arrow" onclick="moveCarousel('left')">&lt;</button>
+      <div class="carousel">
+        <div class="carousel-track">
+          <!-- Project 1 -->
+          <div class="pro ">
+            <h2>React ace editor</h2><br>
+            <img src="./editor.png" alt="img"><br>
+            <div class="des">
+              <h4>Description:</h4>
+              <p>The React-based editor website allows users to create and manage multiple HTML, CSS, and JavaScript files within a unified interface. It features real-time compilation and preview capabilities, enabling users to see immediate results and efficiently develop and test their code.</p>
+            </div><br>
+            <div class="des">
+              <h4>Tech Stack:</h4>
+              <p>React JS,HTML,CSS,JavaScript</p>
+            </div><br>
+            <div class="des">
+              <h4>Role:</h4>
+              <p>Frontend Developer</p>
+            </div><br>
+            <a id="anc" href="https://github.com/DharshiniPandian/React_ace_editor" target="_blank"><button>Git Repo</button></a><br>
+          </div>
+  
+          <!-- Project 2 -->
+          <div class="pro box">
+            <h2>Random Password Generator</h2><br>
+            <img src="./assets/password.png" alt="img"><br>
+            <div class="des">
+              <h4>Description:</h4>
+              <p>A random password generator in React allows users to create strong, unique passwords by specifying criteria such as length and character types (numbers, symbols).</p>
+            </div><br>
+            <div class="des">
+              <h4>Tech Stack:</h4>
+              <p>React JS,HTML,CSS,JavaScript</p>
+            </div><br>
+            <div class="des">
+              <h4>Website Link:</h4>
+              <p><a href="https://safekeygenerator.netlify.app/" target="_blank">https://safekeygenerator.netlify.app/</a></p>
+            </div><br>
+            <a id="anc" href="https://github.com/DharshiniPandian/PasswordGenerator.git" target="_blank"><button>Git Repo</button></a><br>
+          </div>
+  
+          <!-- Project 3 -->
+          <div class="pro box">
+            <h2>PS Events</h2><br>
+            <img src="./event.jpg" alt="img"><br>
+            <div class="des">
+              <h4>Description:</h4>
+              <p>The PS Events platform facilitates event management where administrators can create and manage events, while students register, participate, and complete levels to earn rewards. Built with React JS, Node JS, Express JS, and MySQL, it integrates seamless event creation and tracking with a robust backend.</p>
+            </div><br>
+            <div class="des">
+              <h4>Tech Stack:</h4>
+              <p>React JS,Node JS,Express JS,MYSQL</p>
+            </div><br>
+            <div class="des">
+              <h4>Role:</h4>
+              <p>Backend Developer</p>
+            </div><br>
+            <a id="anc" href="https://github.com/DharshiniPandian/PS_Events" target="_blank"><button>Git Repo</button></a><br>
+          </div>
+
+            <!-- Project 3 -->
+            <div class="pro box">
+              <h2>PS Events</h2><br>
+              <img src="./event.jpg" alt="img"><br>
+              <div class="des">
+                <h4>Description:</h4>
+                <p>The PS Events platform facilitates event management where administrators can create and manage events, while students register, participate, and complete levels to earn rewards. Built with React JS, Node JS, Express JS, and MySQL, it integrates seamless event creation and tracking with a robust backend.</p>
+              </div><br>
+              <div class="des">
+                <h4>Tech Stack:</h4>
+                <p>React JS,Node JS,Express JS,MYSQL</p>
+              </div><br>
+              <div class="des">
+                <h4>Role:</h4>
+                <p>Backend Developer</p>
+              </div><br>
+              <a id="anc" href="https://github.com/DharshiniPandian/PS_Events" target="_blank"><button>Git Repo</button></a><br>
+            </div>
         </div>
       </div>
-      <div class="pro">
-        <div class="box">
-          <h2>PS Events</h2><br>
-          <img src="./event.jpg" alt="img"><br>
-          <div class="des">
-            <h4>Description:</h4>
-            <p>The PS Events platform facilitates event management where administrators can create and manage events, while students register, participate, and complete levels to earn rewards. Built with React JS, Node JS, Express JS, and MySQL, it integrates seamless event creation and tracking with a robust backend.</p>
-          </div><br>
-          <div class="des">
-            <h4>Tech Stack:</h4>
-            <p>React JS,Node JS,Express JS,MYSQL</p>
-          </div><br>
-          <div class="des">
-            <h4>Role:</h4>
-            <p>Backend Developer</p>
-          </div><br>
-          <a href="https://github.com/DharshiniPandian/PS_Events"><button>Git Repo</button></a><br>
-        </div>
-      </div>
+      <button class="arrow right-arrow" onclick="moveCarousel('right')">&gt;</button>
     </div>
+  </section>
+  
+
+  <section class="achievements" id="achievements">
+
   </section>
 
   <section class="contact" id="contact">
-    <!-- <div class="contact-content">
-      <h2>Reach me out</h2><br>
-      <div class="max-width">
-        <form id="submit">
-          <label>Name:</label><br>
-          <input type="text" id="name" placeholder="enter name" required><br>
-          <label>Email:</label><br>
-          <input type="email" id="email" placeholder="enter email" required><br>
-          <label>Subject:</label><br>
-          <input type="text" id="subject" placeholder="enter subject" required><br>
-          <label>Text:</label><br>
-          <textarea id="ebody" placeholder="enter text" required></textarea><br>
-          <button type="submit">Send</button>
-        </form>
+   
+      <h2>For Contacts & To get connected with me</h2>
+      <div id="contact_box">
+        <!-- <div id="contact_sec">
+          <img src="./github.png" alt="Github" />
+          <p><a href="https://github.com/DharshiniPandian" target="_blank">https://github.com</a></p>
+        </div>
+        <div id="contact_sec">
+          <img src="./assets/gmail.png" alt="Github" />
+          <p>dharshinipandian05@gmail.com</p>
+        </div>
+        <div id="contact_sec">
+          <img src="./linkedin.jpg" alt="Github" />
+          <p><a href="https://www.linkedin.com/in/dharshini-pandian-6aa9b4267/" target="_blank">https://www.linkedin.com</a></p>
+        </div> -->
+
+        <table>
+          <tbody>
+            <tr id="tr1">
+              <td id="td1"><img src="./github.png" alt="Github" /></td>
+              <td><p><a href="https://github.com/DharshiniPandian" target="_blank">https://github.com</a></p></td>
+            </tr>
+            <tr>
+              <td id="td1"><img src="./assets/gmail.png" alt="Github" /></td>
+              <td> <p>dharshinipandian05@gmail.com</p></td>
+            </tr>
+            <tr>
+              <td id="td1"><img src="./linkedin.jpg" alt="Github" /></td>
+              <td>  <p><a href="https://www.linkedin.com/in/dharshini-pandian-6aa9b4267/" target="_blank">https://www.linkedin.com</a></p></td>
+            </tr>
+          </tbody>
+        </table>
+        
       </div>
-    </div> -->
+     
   </section>
+
+  <footer>
+    Created By Dharshini
+  </footer>
   
   
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  
  <script src="index.js"></script>
     
 </body> 
