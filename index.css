@@ -1065,6 +1065,17 @@ footer{
   box-sizing: border-box; /* Include padding and borders in the width */
 }
 
+.pro #des{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+#des p{
+  margin-bottom: 3px;
+}
+
 /* For larger screens, show two projects */
 @media (min-width: 768px) {
   .pro {
